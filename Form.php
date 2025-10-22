@@ -21,13 +21,22 @@
         // print_r($_GET);
         // echo "</pre>";
 
-        $NAME = $_GET['name'];
-        $EMAIL = $_GET['email'];
-        $PHONE = $_GET['phone'];
-        echo "Name: $NAME <br>";
-        echo "Email: $EMAIL <br>";
-        echo "Phone: $PHONE <br>";
+        // $NAME = $_GET['name'];
+        // $EMAIL = $_GET['email'];
+        // $PHONE = $_GET['phone'];
+        // echo "Name: $NAME <br>";
+        // echo "Email: $EMAIL <br>";
+        // echo "Phone: $PHONE <br>";
 
+        if (isset($_GET['submit'])) {
+            $NAME = $_GET['name'];
+            $EMAIL = $_GET['email'];
+            $PHONE = $_GET['phone'];
+
+            echo "Name: $NAME <br>";
+            echo "Email: $EMAIL <br>";
+            echo "Phone: $PHONE <br>";
+        }
 
         ?>
         <form action="" method="get">
